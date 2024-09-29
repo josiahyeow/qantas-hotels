@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Hotel } from "./get-hotels";
 
-type SortBy = "price-high-low" | "price-low-high";
+export type HotelListSortBy = "price-high-low" | "price-low-high";
 
 export function useHotelList(data: Hotel[]) {
-  const [sortBy, setSortBy] = useState<SortBy>("price-high-low");
+  const [sortBy, setSortBy] = useState<HotelListSortBy>("price-high-low");
   const [hotels, setHotels] = useState(
     [...data].sort(sortHotelPriceDescendingFn)
   );

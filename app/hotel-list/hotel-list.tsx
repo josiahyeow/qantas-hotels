@@ -1,6 +1,14 @@
-import { getHotels } from "./get-hotels";
+"use client";
 
-export async function HotelList() {
-  const hotels = await getHotels();
-  return <div>Hotel List {JSON.stringify(hotels)}</div>;
+import { HotelListProvider } from "./hotel-list-context";
+import { HotelListHeader } from "./hotel-list-header";
+import { HotelListItems } from "./hotel-list-items";
+
+export function HotelList() {
+  return (
+    <HotelListProvider>
+      <HotelListHeader />
+      <HotelListItems />
+    </HotelListProvider>
+  );
 }

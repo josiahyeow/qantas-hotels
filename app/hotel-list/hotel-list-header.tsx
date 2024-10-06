@@ -8,7 +8,10 @@ export function HotelListHeader() {
   return (
     <div className="flex flex-row justify-between w-full">
       <div>
-        <span>{hotelCount} hotels in Sydney</span>
+        <span className="font-semibold">
+          {hotelCount} <span className="italic font-normal">hotels in</span>{" "}
+          Sydney.
+        </span>
       </div>
       <HotelListSortSelect />
     </div>

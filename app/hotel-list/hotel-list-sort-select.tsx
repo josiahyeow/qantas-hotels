@@ -19,7 +19,9 @@ export function HotelListSortSelect() {
 
   return (
     <div className="flex flex-row gap-1">
-      <label htmlFor="hotel-list-sort-by">Sort by</label>
+      <label htmlFor="hotel-list-sort-by" className="font-semibold">
+        Sort by
+      </label>
       <select
         id="hotel-list-sort-by"
         value={sortBy}

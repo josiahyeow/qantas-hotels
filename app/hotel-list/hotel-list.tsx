@@ -1,6 +1,6 @@
 "use client";
 
-import { HotelListProvider } from "./hotel-list-context";
+import { HotelListProvider } from "./hotel-list-context/hotel-list-context";
 import { HotelListHeader } from "./hotel-list-header";
 import { HotelListItems } from "./hotel-list-items/hotel-list-items";
 

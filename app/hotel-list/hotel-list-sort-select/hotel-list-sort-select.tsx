@@ -1,4 +1,4 @@
-import { useHotelListContext } from "./hotel-list-context";
+import { useHotelListContext } from "../hotel-list-context/hotel-list-context";
 
 export function HotelListSortSelect() {
   const { sortBy, sortPriceHighToLow, sortPriceLowToHigh } =

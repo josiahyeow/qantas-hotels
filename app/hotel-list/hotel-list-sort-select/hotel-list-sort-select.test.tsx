@@ -1,9 +1,9 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { useHotelListContext } from "./hotel-list-context";
+import { useHotelListContext } from "../hotel-list-context/hotel-list-context";
 import { HotelListSortSelect } from "./hotel-list-sort-select";
 
-jest.mock("./hotel-list-context");
+jest.mock("../hotel-list-context/hotel-list-context");
 
 const mockUseHotelListContext = {
   hotels: [],

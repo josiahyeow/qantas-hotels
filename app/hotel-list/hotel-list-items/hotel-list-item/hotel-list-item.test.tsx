@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { render, screen } from "@testing-library/react";
-import { Hotel } from "../../get-hotels";
+import { Hotel } from "../../get-hotels/get-hotels";
 import { HotelListItem } from "./hotel-list-item";
 
 const mockHotel: Hotel = {

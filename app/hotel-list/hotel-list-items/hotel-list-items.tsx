@@ -1,4 +1,4 @@
-import { useHotelListContext } from "../hotel-list-context";
+import { useHotelListContext } from "../hotel-list-context/hotel-list-context";
 import { HotelListItem } from "./hotel-list-item/hotel-list-item";
 
 export function HotelListItems() {

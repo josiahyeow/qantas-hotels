@@ -1,4 +1,4 @@
-import { Hotel } from "../../get-hotels";
+import { Hotel } from "../../get-hotels/get-hotels";
 import { HotelListItemDetails } from "./hotel-list-item-details";
 import { HotelListItemImage } from "./hotel-list-item-image";
 import { HotelListItemPrice } from "./hotel-list-item-price";

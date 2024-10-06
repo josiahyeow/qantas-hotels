@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { Hotel } from "./get-hotels";
+import { Hotel } from "../get-hotels/get-hotels";
 import { useHotelList } from "./use-hotel-list";
 
 describe("useHotelList", () => {

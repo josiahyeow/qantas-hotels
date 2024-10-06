@@ -1,5 +1,5 @@
-import { useHotelListContext } from "./hotel-list-context";
-import { HotelListSortSelect } from "./hotel-list-sort-select";
+import { useHotelListContext } from "./hotel-list-context/hotel-list-context";
+import { HotelListSortSelect } from "./hotel-list-sort-select/hotel-list-sort-select";
 
 export function HotelListHeader() {
   const { hotels } = useHotelListContext();

@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import { getHotels, Hotel } from "./get-hotels";
+import { getHotels, Hotel } from "../get-hotels/get-hotels";
 import { HotelListSortBy, useHotelList } from "./use-hotel-list";
 
 type HotelListContextType = {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Hotel } from "./get-hotels";
+import { Hotel } from "../get-hotels/get-hotels";
 
 export type HotelListSortBy = "price-high-low" | "price-low-high";
 

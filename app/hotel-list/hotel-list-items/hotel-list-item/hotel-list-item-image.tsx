@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 export function HotelListItemImage({
   imageUrl,
   description,
@@ -10,11 +9,15 @@ export function HotelListItemImage({
   promoTitle?: string;
 }) {
   return (
-    <div className="relative">
+    <div className="relative min-w-32 min-h-28">
       <div className="absolute top-2 left-0 p-2 text-red-600 bg-white font-semibold text-xs">
         {promoTitle}
       </div>
-      <Image src={imageUrl} alt={description} width={200} height={150} />
+      <img
+        className="object-cover w-32 h-28"
+        src={imageUrl}
+        alt={description}
+      />
     </div>
   );
 }

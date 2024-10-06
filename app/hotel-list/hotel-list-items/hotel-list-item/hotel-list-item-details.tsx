@@ -12,9 +12,9 @@ export function HotelListItemDetails({
   return (
     <div className="flex flex-col justify-between h-full">
       <div>
-        <h2 className="text-xl font-medium">{title}</h2>
-        <h3 className="text-sm text-gray-500">{address}</h3>
-        <div className="mt-3">
+        <h2 className="text-lg font-medium">{title}</h2>
+        <h3 className="text-xs text-gray-500">{address}</h3>
+        <div className="mt-2">
           <span className="text-xs underline text-red-600">{offerName}</span>
         </div>
       </div>

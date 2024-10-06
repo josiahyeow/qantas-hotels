@@ -13,7 +13,7 @@ export function HotelListItem({ data }: { data: Hotel }) {
           promoTitle={data.offer.promotion.title}
         />
       </div>
-      <div className="flex flex-row justify-between gap-2 w-full border-gray-300 border-t py-4">
+      <div className="flex flex-row justify-between gap-2 w-full border-gray-300 border-t py-3">
         <HotelListItemDetails
           title={data.property.title}
           address={data.property.address.join(", ")}

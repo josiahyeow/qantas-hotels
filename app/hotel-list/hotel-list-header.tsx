@@ -6,7 +6,7 @@ export function HotelListHeader() {
   const hotelCount = hotels.length;
 
   return (
-    <div>
+    <div className="flex flex-row justify-between w-full">
       <div>
         <span>{hotelCount} hotels in Sydney</span>
       </div>

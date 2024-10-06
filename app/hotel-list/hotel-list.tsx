@@ -2,7 +2,7 @@
 
 import { HotelListProvider } from "./hotel-list-context";
 import { HotelListHeader } from "./hotel-list-header";
-import { HotelListItems } from "./hotel-list-items";
+import { HotelListItems } from "./hotel-list-items/hotel-list-items";
 
 export function HotelList() {
   return (

@@ -1,12 +1,10 @@
-"use client";
-
 import { Header } from "./header/header";
 import { HotelList } from "./hotel-list/hotel-list";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="m-6 max-w-7xl m-auto">
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start p-8">
         <Header />
         <HotelList />
       </main>

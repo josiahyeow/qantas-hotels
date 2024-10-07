@@ -22,6 +22,7 @@ export function HotelListItem({ data }: { data: Hotel }) {
             data.offer.cancellationOption.cancellationType ===
             "FREE_CANCELLATION"
           }
+          rating={data.property.rating}
         />
         <div className="justify-self-end text-right self-end">
           <HotelListItemPrice

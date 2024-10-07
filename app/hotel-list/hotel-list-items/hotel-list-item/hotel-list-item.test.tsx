@@ -12,6 +12,10 @@ const mockHotel: Hotel = {
     },
     title: "Example Hotel",
     address: ["123 Example St", "Example City", "EX 12345"],
+    rating: {
+      ratingValue: 4.5,
+      ratingType: "self",
+    },
   },
   offer: {
     promotion: {

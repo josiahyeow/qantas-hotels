@@ -20,17 +20,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Testing
 
-To learn more about Next.js, take a look at the following resources:
+Run tests with the command
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run test
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+or the following to generate coverage report
 
-## Deploy on Vercel
+```bash
+npm run test:coverage
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Approach
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Put hotel data fetching logic into separate function which could be swapped out with a real api with some minor tweaks (handling async request). Reads data from the provided json file.
+- Put sorting logic into custom hook `useHotelList`
+- Provide access to data and custom hook using context `HotelListProvider` to prevent prop drilling.
+- Only pass UI components necessary data.
+- UI components split into small testable components.
+- Designed the rating component to take in icon set to prevent duplicate logic for self and star ratings.
+
+## Trade offs
+
+- Could further optimise layout on smaller screen sizes.
+- Didn't use next image for image optimization as it had issues with the unsplash random endpoint used when deployed.
+- Didn't optimise for a large list of hotels, no pagination.
+- Didn't write tests for the context or data fetching file as there was not much logic in there.

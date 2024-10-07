@@ -5,7 +5,7 @@ import { HotelListItemPrice } from "./hotel-list-item-price";
 
 export function HotelListItem({ data }: { data: Hotel }) {
   return (
-    <div className="flex flex-row gap-6">
+    <div className="flex flex-col border-t md:border-0 md:flex-row md:gap-6">
       <div className="py-2">
         <HotelListItemImage
           imageUrl={data.property.previewImage.url}
@@ -13,7 +13,7 @@ export function HotelListItem({ data }: { data: Hotel }) {
           promoTitle={data.offer.promotion.title}
         />
       </div>
-      <div className="flex flex-row justify-between gap-2 w-full border-gray-300 border-t py-3">
+      <div className="flex flex-row justify-between gap-2 w-full border-gray-300 md:border-t py-3">
         <HotelListItemDetails
           title={data.property.title}
           address={data.property.address.join(", ")}

@@ -9,14 +9,14 @@ export function HotelListItemImage({
   promoTitle?: string;
 }) {
   return (
-    <div className="relative min-w-40 min-h-32">
+    <div className="relative w-full md:min-w-40 md:min-h-32">
       {promoTitle && (
         <div className="absolute top-2 left-0 p-2 text-red-600 bg-white font-semibold text-xs">
           {promoTitle}
         </div>
       )}
       <img
-        className="object-cover w-40 h-32"
+        className="object-cover w-full h-48 md:w-40 md:h-32"
         src={imageUrl}
         alt={description}
       />

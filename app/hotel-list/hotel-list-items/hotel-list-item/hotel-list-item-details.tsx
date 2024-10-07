@@ -20,7 +20,9 @@ export function HotelListItemDetails({
     <div className="flex flex-col justify-between h-full">
       <div>
         <div className="flex flex-row flex-wrap gap-3 items-center">
-          <h2 className="text-lg font-medium max-w-80 truncate">{title}</h2>
+          <h2 className="text-lg font-medium max-w-60 sm:max-w-72  md:max-w-80 truncate">
+            {title}
+          </h2>
           <HotelListItemRating
             value={rating.ratingValue}
             type={rating.ratingType}
